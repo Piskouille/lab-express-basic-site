@@ -1,0 +1,18 @@
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin: 50px;
+}
+
+.card{
+    display: inline-block;
+    justify-self: center;
+    align-self: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}

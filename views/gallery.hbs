@@ -1,0 +1,9 @@
+<h1>The Gallery</h1>
+
+<ul class="gallery">
+{{#each pictures}}
+    <li class="card">
+        <img src="{{this.src}}" alt="{{this.name}}">
+    </li>
+{{/each}}
+</ul>
