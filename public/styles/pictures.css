@@ -1,18 +1,29 @@
+.grid-wrapper{
+    width: 100%;
+    padding: 30px;
+}
+
 .gallery{
     display: grid;
-    grid-template-columns: repeat(3, 20%);
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    margin: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
 
 .card{
-    display: inline-block;
-    justify-self: center;
-    align-self: center;
+    display: flex;
+    position: relative;
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
+}
+
+.img-title{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 100%;
+    text-align: right;
 }

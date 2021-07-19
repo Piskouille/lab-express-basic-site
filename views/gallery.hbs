@@ -1,9 +1,13 @@
 <h1>The Gallery</h1>
 
-<ul class="gallery">
-{{#each pictures}}
-    <li class="card">
-        <img src="{{this.src}}" alt="{{this.name}}">
-    </li>
-{{/each}}
-</ul>
+<div class="grid-wrapper">
+    <ul class="gallery">
+    {{#each pictures}}
+        <li class="card">
+            <img src="{{this.url}}" alt="{{this.author}}">
+            <h4 class="img-title">{{this.author}}</h4>
+        </li>
+    {{/each}}
+    </ul>
+</div>
+
